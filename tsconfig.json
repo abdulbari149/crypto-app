@@ -1,8 +1,7 @@
 {
   "compilerOptions": {
     "experimentalDecorators": true,
-    "baseUrl": ".",
-    "outDir": "build/dist",
+    "baseUrl": "./src",
     "module": "esnext",
     "target": "es2017",
     "lib": [
@@ -31,7 +30,12 @@
     "noFallthroughCasesInSwitch": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true
+    "noEmit": true,
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ]
   },
   "exclude": [
     "node_modules",

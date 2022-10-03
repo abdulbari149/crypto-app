@@ -1,7 +1,10 @@
 import CoinList from './CoinList/components/CoinList'
+import { Route, Routes } from "react-router-dom"
 const CoinPage = () => {
   return (
-    <CoinList />
+    <Routes>
+      <Route index element={<CoinList />} />
+    </Routes>
   )
 }
 

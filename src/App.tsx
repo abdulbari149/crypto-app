@@ -1,9 +1,12 @@
 import './App.css';
-import CoinPage from './modules/coin/CoinPage';
+import { BrowserRouter } from "react-router-dom"
+import Routes from './routes';
 
 export function App() {
   return (
-    <CoinPage />
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
   )
 }
 
